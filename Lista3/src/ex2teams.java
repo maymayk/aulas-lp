@@ -19,5 +19,6 @@ public class ex2teams {
             }
         System.out.println("A soma dos números pares contidos em " +
                 num + " é : " + soma);
+        }
     }
 }
