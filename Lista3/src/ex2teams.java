@@ -5,7 +5,7 @@ public class ex2teams {
         Scanner sc = new Scanner(System.in);
         int num;
         int soma = 0;
-        System.out.println("Insira um número para fazer a operação: ");
+        System.out.println("Insira um número positivo para fazer a operação: ");
         num = sc.nextInt();
         for (int i=1; i<=num; i++){
             if (i  % 2 == 0){
