@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class ex3teams {
     public static void main(String[] args) {
+        /* meu código:
         Scanner sc = new Scanner(System.in);
         int num;
         int soma = 0;
@@ -42,6 +43,7 @@ public class ex3teams {
         else {
             System.out.println("O número " + num + " não é primo.");
         }
+        //o código se torna bem mais eficiente desta forma!
     }
 }
 
