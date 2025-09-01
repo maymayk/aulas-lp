@@ -19,6 +19,25 @@ public class ex3teams {
         }
          else {
             System.out.println("O número " + num + " não é primo.");
+        }*/
+         //correção
+         Scanner sc = new Scanner(System.in);
+        int num = 0;
+        if (num == 0 && num == 1){
+            System.out.println("O número não é primo");
+            return;
+        }
+        boolean primo = true;
+        System.out.println("Digite um número positivo: ");
+        num = sc.nextInt();
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) {
+                primo = false;
+                break;
+            }
+        }
+        if(primo){
+            System.out.println("O número " + num + " é primo.");
         }
     }
 }
