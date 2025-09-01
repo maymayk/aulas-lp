@@ -39,5 +39,9 @@ public class ex3teams {
         if(primo){
             System.out.println("O número " + num + " é primo.");
         }
+        else {
+            System.out.println("O número " + num + " não é primo.");
+        }
     }
 }
+
