@@ -1,24 +1,18 @@
 import java.util.Scanner;
 
 public class ex2teams {
-    public static void main(String[] args) {
+    public static void main (String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Digite o valor da compra: ");
-        float valor = sc.nextFloat();
-        float soma = 0;
-        float contclient = 0;
-        while (valor > 0){
-            soma = soma + valor;
-            contclient++;
-            System.out.println("Digite o valor da compra (negativo para encerrar): ");
-            valor = sc.nextFloat();
+        int num;
+        int soma = 0;
+        System.out.println("Insira um número para fazer a operação: ");
+        num = sc.nextInt();
+        for (int i=1; i<=num; i++){
+            if (i  % 2 == 0){
+                soma = soma + i;
+            }
         }
-        float media = 0;
-        if (contclient !=0){
-            media = soma/contclient;
-        }
-
-        System.out.println("Total de vendas: R$ " + soma + "\nClientes atendidos: "
-            + contclient + "\nMédia de gasto por cliente: R$ " + media);
+        System.out.println("A soma dos números pares contidos em " +
+                num + " é : " + soma);
     }
 }

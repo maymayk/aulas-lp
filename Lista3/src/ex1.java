@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class ex1 {
     public static void main(String[] args) {
         int contador = 1;
         float nota;
