@@ -1,11 +1,12 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
-
-public class ex4teams {
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int opcao;
         float saldo = 1000f;
+        //vetor que guarda as operações de depósito e saque
+        String[] vetor = new String[1000]; //vetor de string com 1000 posições
+        int indice = 0; //cria um índice do vetor que auxilia no armazenamento
         do {
             System.out.println("\n ===== MENU BANCÁRIO ===== \n" +
                     "Escolha uma opção: \n" +
@@ -13,7 +14,7 @@ public class ex4teams {
                     "2 - Depositar \n" +
                     "3 - Sacar \n" +
                     "4 - Extrato\n" + //adição da opção "extrato"
-                     "0 - Sair \n" );
+                    "0 - Sair \n" );
             opcao = sc.nextInt();
             switch (opcao){
                 case 1:
@@ -25,18 +26,25 @@ public class ex4teams {
                     float dep = sc.nextFloat(); /*variável local "dep": não é necessário declarar lá em cima,
                                                 bem como a variável usada para armazenar os valores de saque*/
                     saldo = saldo + dep;
-                    //System.out.println("\tO SEU SALDO ATUAL É R$ " + saldo + "\n"); (CORREÇÃO)
+                    vetor[indice] = "Depósito de \tR$ " + dep; //adiciona o valor do depósito no vetor
+                    indice++;
                     break;
                 case 3:
                     System.out.println("\tINFORME O VALOR DO SAQUE: R$ ");
                     float saque = sc.nextFloat();
                     if (saque < saldo){ //também poderia ser: "if(saldo>=saque)"
                         saldo = saldo - saque;
-                        //System.out.println("\tSALDO ATUAL É R$ " + saldo + "\n"); (CORREÇÃO)
+                        vetor[indice] = "Saque de \tR$ " + saque; //adiciona o valor do depósito no vetor
+                        indice++;
                     }
                     else {
                         System.out.println("\tNÃO É POSSÍVEL REALIZAR O SAQUE DO VALOR DESEJADO" +
                                 " POIS O SALDO É INSUFICIENTE\n\tSALDO DISPONÍVEL PARA EFETUAR SAQUE É R$ " + saldo + "\n");
+                    }
+                    break;
+                case 4:
+                    for (int i=0; i<indice; i++){
+                        System.out.println(vetor[i]);
                     }
                     break;
                 case 0:
