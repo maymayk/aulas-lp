@@ -1,7 +1,6 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class ex4teams {
+public class menubanco {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int opcao;

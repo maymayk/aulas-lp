@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ex1teams {
+public class usodofor {
     public static void main (String[] args){
         //Exercício 1 - Tabuada personalizada
         Scanner sc = new Scanner(System.in);

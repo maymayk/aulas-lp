@@ -1,6 +1,6 @@
 //import java.util.Scanner;
 
-public class ex1teams {
+public class vetor {
     public static void main (String[] args){
         int vetor[] = new int[10]; //criação do vetor
         for (int i = 0; i < 10; i++){

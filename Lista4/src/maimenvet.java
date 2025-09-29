@@ -1,4 +1,4 @@
-public class ex3teams {
+public class maimenvet {
     public static void main(String[] args){
         int[] vet = new int[8];
         for(int i=0; i<8; i++){

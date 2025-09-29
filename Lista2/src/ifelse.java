@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main2 {
+public class ifelse {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         //Exercício 3

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ex5teams {
+public class pesquisavet {
     public static void main(String[] args) {
         int vet[] = new int[15];
         for (int i=0; i<15; i++){

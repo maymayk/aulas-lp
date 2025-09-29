@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ex3teams {
+public class somaprimos {
     public static void main(String[] args) {
         /* meu código:
         Scanner sc = new Scanner(System.in);

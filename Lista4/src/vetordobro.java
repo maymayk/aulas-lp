@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ex2teams {
+public class vetordobro {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int vet1[] = new int[5];

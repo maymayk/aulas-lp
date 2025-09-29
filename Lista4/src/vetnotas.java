@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ex4teams {
+public class vetnotas {
     public static void main(String[] args) {
         String[] nomes = new String[10];
         float[] notas = new float[10];
